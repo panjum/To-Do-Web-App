@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/main.css">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script src="https://kit.fontawesome.com/abb01e224b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="all-tasks">
+    <section class="header">
+      <div class="top-header">
+        <div class="header-left">
+          <h3>task manager</h3>
+        </div>
+        <div class="header-right">
+          <div class="tasks"><span class="task-number">5</span>Tasks</div>
+          <div class="tasks"><span class="task-number">3</span>Completed</div>
+          <div class="add-circle"><i class="fas fa-plus-circle"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-area">
+      <div class="content-area-container">
+        <div class="task-item">
+          Watch GitHub Essentials video.
+          <div class="task-created-time">
+            Created: December 25th 2019.
+          </div>
+          <!-- <div class="checkmark">
+            <i class="far fa-check-square"></i>
+          </div> -->
+        </div>
+        <div class="task-item">
+          Buy tickets for Hamilton.
+          <div class="task-created-time">
+            Created: March 26th 2020.
+          </div>
+        </div>
+        <div class="task-item">
+          Renew Forbes magazine subscription.
+          <div class="task-created-time">
+            Created: April 12th 2020.
+          </div>
+          <div class="checkmark">
+            <i class="far fa-check-square"></i>
+          </div>
+        </div>
+        <div class="task-item">
+          purchase 2020 desk calendar.
+          <div class="task-created-time">
+            Created: December 27th 2019.
+          </div>
+          <div class="checkmark">
+            <i class="far fa-check-square"></i>
+          </div>
+        </div>
+        <div class="task-item">
+          Sign up for React course.
+          <div class="task-created-time">
+            Created: May 4th 2020.
+          </div>
+          <div class="checkmark">
+            <i class="far fa-check-square"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="new-task-form">
+      <div class="task-form-container">
+        <div class="new-task-close-btn">
+          <i class="far fa-times-circle"></i>
+        </div>
+        <form>
+          <h3>Add a task</h3>
+          <div class="form-group">
+            <label for="task-title">Task Title:</label>
+            <input type="text" name="task-title">
+          </div>
+          <div class="form-group">
+            <label for="task-title">Task Category:</label>
+            <input type="text" name="task-title">
+          </div>
+          <div class="form-group">
+            <label for="task-notes">Notes:</label>
+            <textarea name="task-notes"></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" name="button">Add new task</button>
+          </div>
+        </form>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script>
+          $(document).ready(function() {
+            $(".add-circle").click(function() {
+              $(".new-task-form").addClass("active");
+            });
+            $(".new-task-close-btn").click(function() {
+              $(".new-task-form").removeClass("active");
+            });
+          });
+        </script>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
